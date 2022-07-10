@@ -77,12 +77,13 @@ ul {
 
 /* Header */
 
-
+.header {
+    border-bottom: 1px solid var(--border-bottom-clr);
+}
 
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--border-bottom-clr);
 
 }
 
@@ -91,12 +92,11 @@ ul {
     font-weight: 700;
     font-size: 26px;
     display: block;
-    padding-right: 93px;
-
+    margin-right: 93px;
 }
 
 
-.link .logo-name {
+.logo-name {
     color: var(--nav-text-color);
 }
 
@@ -118,6 +118,7 @@ ul {
 }
 
 .navigation .nav-link {
+    display: block;
     padding-left: 0;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -149,8 +150,6 @@ ul {
     display: flex;
     gap: 50px;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
     padding-left: 0;
 }
@@ -193,6 +192,7 @@ ul {
 }
 
 .hero .hero-title {
+    max-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -257,10 +257,13 @@ ul {
     text-decoration: none;
     list-style: none;
     display: flex;
+    padding-left: 0px;
 }
 
 .spec-list .spec-item {
     margin-left: 30px;
+    min-width: 270px;
+
 }
 
 .spec-item:first-child {
@@ -336,17 +339,11 @@ ul {
     margin-right: auto;
     background-color: var(--second-bcg-color);
     padding-left: 0;
-
-}
-
-.team-container {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.team:last-child {
-    margin-right: 0;
-}
+
 
 .team-title {
     margin-bottom: 50px;
@@ -356,11 +353,18 @@ ul {
 .team-card {
     margin-right: 30px;
     width: 270px;
-    height: 369px;
     background-color: var(--main-bcg-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.team-card:last-child {
+    margin-right: 0;
+}
+
+.team-caption {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .card-image {
     width: 270px;
@@ -374,6 +378,7 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-header-color);
+    margin-bottom: 10px;
 }
 
 .card-text {
@@ -389,15 +394,11 @@ ul {
 
 .footer {
     background-color: var(--footer-bcg-clr);
-}
-
-.footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 0;
     padding-right: 0;
 }
-
 
 .footer-link {
     list-style: none;
@@ -413,7 +414,7 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--main-header-color);
 }
 
 .footer-address {
