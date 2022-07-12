@@ -370,8 +370,8 @@ ul {
 }
 
 .card-image {
+    display: block;
     width: 270px;
-    height: 260.71px;
 }
 
 .card-title {
