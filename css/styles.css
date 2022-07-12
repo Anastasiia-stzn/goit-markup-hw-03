@@ -333,17 +333,20 @@ ul {
 
 /*  Kоманда  */
 .team {
+    background-color: var(--second-bcg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 0;
+}
+
+.team-list {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--second-bcg-color);
     padding-left: 0;
-    padding-top: 94px;
-    padding-bottom: 94px;
+
 }
-
-
 
 .team-title {
     margin-bottom: 50px;
